@@ -9,17 +9,21 @@ Routing
 ["имя_контроллера", "action", "параметр_1", "параметр_2", ... ]
 
 Например:
-````
-routing = [
-  "about-us": ["page", "about"],
-  "company/(\w+)": ["company", "show", "$1"]
-  "products": ["products", "index"]
-  "products/(\w+)/(\d+)": ["products", "show", "$1", "$2"]
-]
-````
+```json
+{
+  "routing": {
+    "about-us": ["page", "about"],
+    "company/(\w+)": ["company", "show", "$1"],
+    "products": ["products", "index"],
+    "products/(\w+)/(\d+)": ["products", "show", "$1", "$2"]
+  }
+}
+```
 
 При этом дефолтный роут который будет срабатывать если ничего не задано:
-````
-  "(\w+)": ["$1", "index"]
+```json
+{
+  "(\w+)": ["$1", "index"],
   "(\w+)/(\w+)": ["$1", "$2"]
-````  
+}
+```  
