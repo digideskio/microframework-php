@@ -10,3 +10,6 @@ microframework-php
 - [Конфигурация](doc/config.md)
 - [Маршруты (Routing)](doc/routing.md)
 - [База данных](doc/database.md)
+- [Контроллер](doc/controller.md)
+- [Представление (View)](doc/view.md)
+- [Приложение (App)](doc/application.md)
